@@ -25,7 +25,7 @@
 from tensorflow.python.keras.layers import Flatten, Dense, Input, GlobalAveragePooling2D, \
     GlobalMaxPooling2D, Activation, Conv2D, MaxPooling2D, \
     AveragePooling2D, Reshape, Permute, multiply
-from tensorflow.python.keras.layers import BatchNormalization
+from keras.api.layers import BatchNormalization
 from keras_applications.imagenet_utils import _obtain_input_shape
 from tensorflow.python.keras.utils.data_utils import get_file
 from tensorflow.python.keras import backend as K
@@ -35,7 +35,6 @@ import warnings
 from tensorflow.python.keras.models import Model
 from tensorflow.python.keras import layers
 from tensorflow.python.keras.utils import layer_utils
-
 
 def VGG16(include_top=True, weights='vggface',
           input_tensor=None, input_shape=None,
